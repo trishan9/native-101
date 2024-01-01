@@ -7,25 +7,25 @@ const App = () => {
   return (
     <View>
       <ScrollView>
-        <View style={styles.container}>
+        <View className="flex-1 flex-col items-center justify-center py-[50px] px-[30px]">
           <View>
-            <Text style={styles.heading}>
+            <Text className="font-medium text-lg py-[15px]">
               BlogMandu
             </Text>
           </View>
 
           {BLOGS.map((blog) => (
             <Fragment key={blog.id}>
-              <Image style={styles.bannerImage} source={{ uri: blog.imageUri }} />
+              <Image className="w-[600px] h-[300px]" source={{ uri: blog.imageUri }} />
 
-              <View style={styles.titleContainer}>
-                <Text style={styles.tag}>Tips & Articles</Text>
+              <View className="py-[40px] px-[30px] flex flex-col items-center gap-[2px]">
+                <Text className="font-medium text-[#00ff00]">Tips & Articles</Text>
 
-                <Text style={styles.title}>{blog.title}</Text>
+                <Text style={styles.serif} className="text-center font-medium text-3xl">{blog.title}</Text>
               </View>
 
-              <View style={styles.contentContainer}>
-                <Text style={styles.content}>
+              <View className="mb-[30px]">
+                <Text style={styles.serif} className="text-[#454545] font-light italic">
                   {blog.content}
                 </Text>
               </View>
