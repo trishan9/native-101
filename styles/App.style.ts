@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -14,55 +14,6 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 18,
     paddingVertical: 15,
-  },
-
-  bannerImage: {
-    width: 600,
-    height: 300,
-  },
-
-  titleContainer: {
-    paddingVertical: 40,
-    paddingHorizontal: 30,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 2,
-  },
-
-  tag: {
-    fontWeight: "500",
-    color: "#00ff00",
-  },
-
-  title: {
-    fontFamily: "serif",
-    fontSize: 28,
-    textAlign: "center",
-    fontWeight: "500",
-  },
-
-  contentContainer: {
-    marginBottom: 30,
-  },
-
-  content: {
-    color: "#454545",
-    fontWeight: "300",
-    fontStyle: "italic",
-    fontFamily: "serif",
-  },
-  modalBody: {
-    paddingVertical: 80,
-    paddingHorizontal: 40,
-    flex: 1,
-    justifyContent: "center",
-    backgroundColor: "rgb(224 242 254)",
-  },
-
-  modalImage: {
-    width: "auto",
-    height: 300,
   },
 });
 

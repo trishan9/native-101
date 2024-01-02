@@ -1,5 +1,5 @@
-import BlogItem from "./BlogItem";
-import ImageModal from "./ImageModal";
+import BlogItem from "./BlogItem/BlogItem";
+import ImageModal from "./ImageModal/ImageModal";
 import Loader from "./Loader";
 
 export { BlogItem, ImageModal, Loader };

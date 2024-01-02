@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import { Alert, Button, ScrollView, Text, View } from "react-native";
+import {
+  Alert,
+  Button,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
 import styles from "./styles/App.style";
 import { BlogItem, ImageModal, Loader } from "./components";
 import BLOGS from "./constants/blogs";
@@ -20,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <View>
+    <SafeAreaView>
       <StatusBar style="dark" backgroundColor="#1cff" />
 
       <ImageModal
@@ -87,7 +94,7 @@ const App = () => {
             ))}
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 

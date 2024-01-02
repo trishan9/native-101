@@ -1,6 +1,6 @@
 import { Button, Image, Modal, View } from "react-native";
-import styles from "../styles/App.style";
-import { TImageModalProps } from "../types";
+import styles from "./ImageModal.style";
+import { TImageModalProps } from "../../types";
 
 const ImageModal = ({
   imageForModal,
@@ -11,7 +11,6 @@ const ImageModal = ({
     <Modal
       visible={isModalVisible}
       onRequestClose={() => setIsModalVisible(false)}
-      presentationStyle="pageSheet"
       animationType="slide"
     >
       <View style={styles.modalBody}>
