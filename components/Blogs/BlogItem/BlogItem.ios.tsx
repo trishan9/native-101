@@ -7,7 +7,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 import styles from "./BlogItem.style";
-import { TBlogItemProps } from "../../types";
+import { TBlogItemProps } from "../../../types";
 
 const BlogItem = ({
   blog,
@@ -23,7 +23,7 @@ const BlogItem = ({
           setIsModalVisible(true);
           setImageForModal(blog.imageUri);
         }}
-        onLongPress={() => console.log("Android: Long Pressed Image")}
+        onLongPress={() => console.log("IOS: Long Pressed Image")}
       >
         <Image
           style={

@@ -5,6 +5,11 @@ export type TBlog = {
   content: string;
 };
 
+type TBlogProps = {
+  setIsModalVisible: (value: boolean) => void;
+  setImageForModal: (value: string) => void;
+};
+
 export type TBlogItemProps = {
   blog: TBlog;
   setIsModalVisible: (value: boolean) => void;
